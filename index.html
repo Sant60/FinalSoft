@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dot Exe Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="navBar">
+      <div id="logo">DemoLogo</div>
+      <input id="navsearch" type="search" placeholder="Search" />
+      <ul>
+        <li>Home</li>
+        <li>Appointment</li>
+        <li>Hospitals</li>
+        <li>About Us</li>
+        <li>Contact Us</li>
+        <a href="login.html"
+          ><button class="navbtn"><p>Login</p></button></a
+        ><i onclick="toggle()" id="toggle" class="fa-solid fa-bars"></i>
+      </ul>
+    </div>
+    <div class="main">
+      <div class="main1">
+        <h2>
+          Streamline Your<span> Healthcare</span> with Our Hospital Management
+          System
+        </h2>
+        <a href="login.html">
+          <button class="mainbtn"><p>Explore Now</p></button></a
+        >
+      </div>
+      <div class="main2">
+        <img src="./images/doctors_illustration.jpg" alt="" />
+      </div>
+    </div>
+    <div class="sidebar">
+      <h2 id="sidecross">&times;</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Appointments</a></li>
+        <li><a href="#">Hospitals</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">contact us</a></li>
+        <a href="login.html"
+          ><button class="sidebtn"><p>Login</p></button></a
+        >
+      </ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

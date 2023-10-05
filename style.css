@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: fixed;
+  font-family: sans-serif;
+  background: #fcfcfc;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+/*------------------- Navigation Bar CSS-------------------*/
+
+#navBar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: last baseline;
+  position: relative;
+  width: 100vw;
+  height: 6vh;
+  background: #ffffffd2;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+  /* border-bottom: 1px solid rgb(152, 152, 152); */
+}
+#logo {
+  font-size: 2rem;
+  margin-left: 20px;
+  cursor: pointer;
+  position: static;
+}
+.icons1 {
+  width: 3vh;
+  color: white;
+}
+#navBar ul {
+  list-style: none;
+  justify-content: flex-end;
+  position: relative;
+  align-items: last baseline;
+  /* overflow: visible; */
+  color: rgb(0, 0, 0);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: 0 3vw -1% 2vw;
+}
+
+#navsearch {
+  width: 23em;
+  height: 2.5em;
+  margin-right: 3px;
+  margin: 0 0 0 1rem;
+  border-bottom: 3px solid rgb(19, 153, 216);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+
+  outline: none;
+  padding-inline-start: 0.5em;
+  outline-color: rgb(19, 153, 216);
+}
+#navBar #toggle {
+  margin-right: -10%;
+  font-size: 4vh;
+  display: none;
+  scale: 0;
+  cursor: pointer;
+}
+#dashBoard {
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+}
+#navBar ul li {
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  gap: 2px;
+  width: 10rem;
+  padding-bottom: 3%;
+  height: 1.9rem;
+  text-align: center;
+}
+#navBar ul li:hover {
+  border-bottom: 3px solid rgb(19, 153, 216);
+}
+.navbtn {
+  color: rgb(255, 255, 255);
+  width: 80px;
+  height: 35px;
+  margin: 0 0 0.3em 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  background: rgb(19, 153, 216);
+  transition: background-color 0.3s;
+}
+.navbtn:hover {
+  color: rgb(255, 255, 255);
+  background: transparent;
+  background: rgb(28, 39, 44);
+}
+
+.navbtn p {
+  padding-top: 0.3em;
+  font-size: 1em;
+}
+/*-------------Main Content CSS -------------------*/
+.main {
+  width: 100vw;
+  height: 100vw;
+  position: relative;
+  display: flex;
+  background: transparent;
+}
+.main1 {
+  width: 50%;
+  height: 100%;
+  padding: 4vw 6vw;
+  background: #fafafa;
+  background: transparent;
+}
+.main2 {
+  width: 50%;
+  height: 100%;
+  background: transparent;
+}
+.main1 h2 {
+  font-size: 3rem;
+  line-height: 7vw;
+}
+.main1 span {
+  color: rgb(19, 153, 216);
+}
+.main2 img {
+  background-size: cover;
+  margin: 4em 0 0 0;
+  width: 45vw;
+  height: 45vw;
+}
+
+.mainbtn {
+  width: 11em;
+  height: 3em;
+  border-radius: 5px;
+  cursor: pointer;
+  background: rgb(19, 153, 216);
+  color: rgb(255, 255, 255);
+  border: none;
+  transition: background-color 0.3s;
+}
+.mainbtn:hover {
+  background: rgb(18, 33, 41);
+  color: rgb(255, 255, 255);
+}
+/*---------------- media query for responsive navbar------------------ */
+
+@media (max-width: 800px) {
+  #navBar ul li {
+    display: none;
+  }
+  .navbtn {
+    display: none;
+  }
+  .mainbtn {
+    width: 11em;
+    height: 3em;
+    border-radius: 5px;
+    cursor: pointer;
+    background: rgb(19, 153, 216);
+    color: rgb(255, 255, 255);
+    border: none;
+    transition: background-color 0.3s;
+  }
+  .mainbtn:hover {
+    background: rgb(18, 33, 41);
+    color: rgb(255, 255, 255);
+  }
+  #navBar #toggle {
+    display: block;
+    scale: 1;
+    margin-right: 20px;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .main .main1 {
+    width: 100%;
+    height: 50%;
+  }
+  .main .main2 {
+    width: 100%;
+    height: 50%;
+  }
+  .main2 img {
+    width: 100%;
+    height: 150%;
+  }
+  .main1 h2 {
+    font-size: 8vw;
+    line-height: 10vw;
+  }
+  .sidebar .active {
+    left: 0;
+  }
+  .sidebar h2 {
+    position: absolute;
+    top: 1%;
+    cursor: pointer;
+    left: 10px;
+    font-size: 50px;
+  }
+  .sidebtn {
+    color: rgb(255, 255, 255);
+    width: 7em;
+    height: 3em;
+    cursor: pointer;
+
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    background: rgb(19, 153, 216);
+    transition: background-color 0.3s;
+  }
+  .sidebtn:hover {
+    color: rgb(255, 255, 255);
+    background: transparent;
+    background: rgb(28, 39, 44);
+  }
+
+  .sidebtn p {
+    padding-top: 0.3em;
+    font-size: 1em;
+  }
+}
+@media (min-width: 800px) {
+  .sidebar {
+    display: none;
+  }
+}
+/* --------------------Sidebar CSS------------------ */
+.sidebar {
+  height: 100vh;
+  width: 50vw;
+  z-index: 2;
+  position: fixed;
+  left: -100%;
+  border-right: 2px solid rgb(19, 153, 216);
+  background: transparent;
+  backdrop-filter: blur(32px);
+  padding-top: 20px;
+  transition: left 0.3s ease;
+}
+
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  height: 70%;
+  margin: 10% 0 0 0;
+  position: relative;
+}
+
+.sidebar li {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.sidebar li:hover {
+  border-bottom: 3px solid rgb(19, 153, 216);
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #030303;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.content {
+  margin-left: 250px;
+  padding: 20px;
+}
+#sidecross {
+  color: rgb(19, 153, 216);
+}
