@@ -4,16 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Patient Signup</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <style>
       body {
-        background-color: rgb(19, 153, 216);
         font-family: Arial, sans-serif;
         display: flex;
-        justify-content: center;
-        align-items: center;
+
         height: 100vh;
         margin: 0;
+      }
+      #navBar {
+        position: relative;
+        width: 100vw;
+        background: #ffffff;
+        height: 7vh;
+        color: rgb(5, 5, 5);
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+      }
+      #navBar a {
+        text-decoration: none;
+        color: black;
+        font-size: 7vh;
+      }
+      #navBar a p {
+        margin: -0.6% 0 0 1%;
       }
 
       .container {
@@ -22,9 +36,19 @@
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         text-align: center;
-        width: 40%;
+        margin: 10% 0 0 0;
+        background: transparent;
+        min-width: 50vw;
+        min-height: 50vh;
+        border: 1px solid rgb(19, 153, 216);
+        /* box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.15); */
+        backdrop-filter: blur(30px);
       }
-
+      .silog {
+        display: flex;
+        justify-content: center;
+        align-items: last baseline;
+      }
       h1 {
         color: rgb(19, 153, 216);
       }
@@ -45,6 +69,7 @@
         padding: 10px;
         border: 1px solid #ccc;
         border-radius: 5px;
+        outline-color: rgb(19, 153, 216);
       }
 
       .form-group button {
@@ -63,53 +88,58 @@
     </style>
   </head>
   <body>
-    <div class="container">
-      <h1>Signup</h1>
-      <form action="#" method="POST">
-        <div class="form-group">
-          <label for="name">
-            <input
-              type="text"
-              placeholder="Enter Full name"
-              id="name"
-              name="name"
-              required
-          /></label>
-        </div>
-        <div class="form-group">
-          <label for="email">
-            <input
-              type="email"
-              placeholder="Enter email"
-              id="email"
-              name="email"
-              required
-          /></label>
-        </div>
-        <div class="form-group">
-          <label for="password">
-            <input
-              type="password"
-              placeholder="Enter Your password"
-              id="password"
-              name="password"
-              required
-          /></label>
-        </div>
-        <div class="form-group">
-          <label for="password">
-            <input
-              type="phone"
-              placeholder="phone"
-              id="phone"
-              name="phone"
-              required
-          /></label>
-        </div>
-        <div class="form-group">
-          <button type="submit">Signup</button>
-        </div>
-      </form>
+    <div id="navBar">
+      <a href="index.html"> <p>&times;</p></a>
+    </div>
+    <div class="silog">
+      <div class="container">
+        <h1>Signup</h1>
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="name">
+              <input
+                type="text"
+                placeholder="Full name"
+                id="name"
+                name="name"
+                required
+            /></label>
+          </div>
+          <div class="form-group">
+            <label for="email">
+              <input
+                type="email"
+                placeholder="Email"
+                id="email"
+                name="email"
+                required
+            /></label>
+          </div>
+          <div class="form-group">
+            <label for="password">
+              <input
+                type="password"
+                placeholder="Password"
+                id="password"
+                name="password"
+                required
+            /></label>
+          </div>
+          <div class="form-group">
+            <label for="password">
+              <input
+                type="phone"
+                placeholder="Phone"
+                id="phone"
+                name="phone"
+                required
+            /></label>
+          </div>
+          <div class="form-group">
+            <button type="submit">Signup</button>
+          </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>
